@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+pkgload::load_all(".", quiet = TRUE)
+```
+
+# assignmentB2MahsaGhahremani
+
+This R package provides a function to count missing values in a dataset by group. It helps users identify which columns have missing values and compare missing data across different groups.
+
+## Installation
+
+You can install this package from GitHub using:
+
+```r
+install.packages("devtools")
+devtools::install_github(
+  "UBC-STAT545-F2026/assignmentB2MahsaGhahremani",
+  ref = "0.1.0"
+)
+```
+
+## Example
+
+The package includes the function `count_all_missing_by_group()`. It counts missing values in each column for each group.
+
+For example, we can use the built-in `airquality` dataset to count missing values by month.
+
+```{r example}
+count_all_missing_by_group(airquality, Month)
+```
+
+The output shows the number of missing values in each column for each month.
