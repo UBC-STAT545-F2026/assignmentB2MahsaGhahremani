@@ -6,8 +6,9 @@ Authors@R:
 Description: Provides a function to count missing values in each
     column of a dataset for different groups. This helps users
     compare missing data across groups.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Imports: 
+    dplyr
